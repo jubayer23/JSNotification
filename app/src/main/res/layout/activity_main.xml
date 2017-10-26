@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.creative.jsnotification.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification need to fire after : " />
+
+    <EditText
+        android:id="@+id/ed_notification_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="mins" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="fireNotification"
+        android:text="Fire notification" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="pendingNotification"
+        android:text="How many notification pending" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="cancelAllNotification"
+        android:text="Cancel all notificaton" />
+
+</LinearLayout>
